@@ -29,9 +29,9 @@ oldpublished = (oldpublished.text)
 while True:
 
     feed = feedparser.parse(feed_url)
-    newpublished = (feed['entries'][0]['published'])
+    newpublished = (feed['entries'][0]['title'])
 
-    if newpublished != oldpublished:
+    if newpublished not in oldpublished:
 
         # Grabs the newest item from the feed with its title and content
         oldfeed = feedparser.parse(feed_url)
@@ -49,7 +49,7 @@ while True:
         api.update_status(tweetthis)
 
 
-    elif newpublished == oldpublished:
+    elif newpublished in oldpublished:
 
         print ('Nothing new...')
 
