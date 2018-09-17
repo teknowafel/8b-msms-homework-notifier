@@ -2,3 +2,4 @@ feedparser==5.2.1
 tweepy==3.6.0
 beautifulsoup4==4.6.3
 flask==1.0.2
+lxml==4.2.5
