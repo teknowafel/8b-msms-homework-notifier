@@ -21,7 +21,7 @@ api = tweepy.API(auth)
 public_tweets = api.home_timeline()
 
 
-feed_url = ('http://msms8btest.blogspot.com/feeds/posts/default')
+feed_url = ('http://8bhomeworkassignments.blogspot.com/feeds/posts/default')
 
 oldpublished = (public_tweets[0])
 oldpublished = (oldpublished.text)
